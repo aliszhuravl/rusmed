@@ -1,0 +1,376 @@
+@media (max-width: 640px) {
+  .page__item {
+    padding: 40px 20px;
+  }
+
+  .main_block {
+    height: 520px;
+  }
+
+  .main_block {
+    justify-content: flex-start;
+    background-image: url(../img/fone_mobile.jpg);
+    background-position: center bottom;
+    background-size: cover;
+      &__inner {
+        margin-top: 60px;
+      }
+  }
+
+  .no-padding_tablet {
+    padding-bottom: 0;
+  }
+
+  .header__inner .header_top__inner .logo_box p {
+    display: none;
+  }
+  .header__inner .header_top__inner .logo_box img {
+    width: 54px;
+    height: 54px;
+  }
+  .header__inner .header_top {
+    width: 100%;
+    padding: 10px 20px;
+  }
+  .search {
+    display: none;
+  }
+  //.main_block {
+  //  background-image: url(../img/fone_retina.jpg);
+  //  background-position: 61% bottom;
+  //}
+  .main_block__inner {
+    padding-left: 20px;
+    padding-right: 0;
+    max-width: 90%;
+      &__slider {
+        .text_18 {
+          font-size: 14px;
+          line-height: 20px;
+        }
+        h1 {
+          font-size: 26px;
+          line-height: 32px;
+        }
+      }
+  }
+  .text_warning {
+    padding: 40px 20px 0 20px;
+  }
+
+  h2 {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .text_20 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .text_16 {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .tile_icons .tile_item {
+    height: 180px;
+    width: 100%;
+    margin-bottom: 32px;
+    margin-right: 0;
+  }
+
+  .auto_block.medici {
+    background-image: none;
+    padding: 0 20px 40px 20px;
+    background-color: transparent;
+    border-bottom: 1px solid $border-gray;
+  }
+
+  .auto_block__inner .text_16 {
+    font-size: 14px;
+    line-height: 21px;
+    width: 100%;
+    letter-spacing: .02em;
+  }
+
+  .tile_tre {
+    margin: 0;
+    .tile_item {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 40px;
+      justify-content: flex-start;
+      align-items: flex-start;
+        .text_18 {
+          line-height: 20px;
+        }
+    }
+  }
+
+  .promo {
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: .02em;
+  }
+
+  .tile_news .tile_item {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .link_arrow {
+    font-size: 13px;
+  }
+
+  .mb_40 {
+    margin-bottom: 26px;
+  }
+
+  .tile_nums {
+    margin-top: 40px;
+    .tile_item {
+      width: 100%;
+      align-items: flex-start;
+      margin-bottom: 40px;
+        .num {
+          font-size: 20px;
+        }
+        .text {
+          max-width: 100%;
+            .text_15 {
+              line-height: 21px;
+            }
+        }
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+  .form_container .form_box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .form_container .form_box .form__item {
+    min-width: 100%;
+    width: 100%;
+    margin-bottom: 20px;
+    margin-right: 0;
+  }
+
+  .form__item {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .footer {
+    padding: 0 20px;
+    &__inner {
+      padding-top: 32px;
+      &_top {
+        flex-direction: column;
+        margin-bottom: 32px;
+        align-items: flex-start;
+        justify-content: flex-start;
+        width: 100%;
+        .left {
+          margin-bottom: 32px;
+          .ico_text {
+            margin-bottom: 20px;
+            .ico {
+              display: none;
+            }
+            .text {
+              font-size: 14px;
+            }
+          }
+          .teleph {
+            margin-bottom: 20px;
+          }
+        }
+      }
+    }
+  }
+
+  .footer__inner_bottom {
+    padding: 20px 0;
+    .left p {
+      font-size: 11px;
+      opacity: .5;
+    }
+  }
+
+  .link {
+    font-size: 14px;
+  }
+
+  //ADDITIONAL PAGES STARTS HERE
+
+  .text_18 {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .page_name {
+    padding: 20px;
+  }
+  .page_title {
+    h2 {
+      margin-bottom: 16px;
+    }
+  }
+  .bc_long {
+    display: none !important;
+  }
+  .mobile {
+    display: flex;
+  }
+  .sort_filters {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+  }
+  .dashed_search {
+    background-position: 95%;
+    padding: 12px;
+  }
+  .sort_filters .sf_item {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .filter_organisations .left {
+    width: 100%;
+    margin-bottom: 20px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+      p.medium {
+        margin-right: 0;
+        font-size: 14px;
+        margin-bottom: 8px;
+      }
+  }
+  .filter_organisations .right {
+    width: 100%;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-end;
+      p.medium {
+        margin-right: 0;
+        font-size: 14px;
+        margin-bottom: 8px;
+      }
+  }
+  .dropdown .dropdown__text {
+    padding: 0 12px;
+  }
+  .tile_organisations .tile_item .text_container {
+    padding: 0 12px 12px 12px;
+  }
+  .tile_organisations .tile_item .news_img {
+    margin-bottom: 12px;
+  }
+  .tile_organisations .tile_item {
+    &:nth-child(3n+3) {
+      margin-right: 0;
+    }
+  }
+  .pagination {
+    margin-top: 12px;
+    margin-bottom: 12px;
+      .pages {
+        margin: 0 20px;
+      }
+  }
+
+  //ORGANISATION PAGE
+
+  h3 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .closer {
+    padding-top: 0;
+  }
+  .org_profile {
+    margin-bottom: 32px;
+    .accordion__text {
+      font-size: 16px;
+      padding-left: 12px;
+    }
+    .accordion__content {
+      padding: 12px 0 12px 12px;
+    }
+  }
+  .gallery {
+    margin-bottom: 0;
+    .gallery_item {
+      width: 100%;
+      margin-right: 0;
+      &:nth-child(3n+3) {
+        margin-right: 0;
+      }
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  //ARTICLE PAGE
+
+  .article {
+    h1 {
+      font-size: 20px;
+      line-height: 26px;
+      margin-top: 20px;
+      margin-bottom: 12px;
+      text-transform: none;
+    }
+    h2 {
+      margin-top: 20px;
+      font-size: 18px;
+      line-height: 24px;
+    }
+    h3 {
+      font-size: 16px;
+      line-height: 22px;
+      margin-top: 20px;
+    }
+    p {
+      font-size: 14px;
+      line-height: 24px;
+      max-width: 100%;
+      margin-bottom: 10px;
+      letter-spacing: .02em;
+    }
+    img {
+      margin: 12px 0;
+    }
+    .q {
+      margin: 25px 0;
+      padding: 20px;
+      padding-right: 0;
+    }
+  }
+
+  //OZDOROVLENIE PAGE
+
+  .page_body {
+    margin-top: 32px;
+    margin-bottom: 40px;
+      &__inner {
+        flex-direction: column;
+          .right {
+            margin-bottom: 32px;
+          }
+          .left {
+            margin-right: 0;
+          }
+      }
+  }
+  .reverse {
+    flex-direction: column-reverse;
+  }
+}

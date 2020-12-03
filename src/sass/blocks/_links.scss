@@ -1,0 +1,32 @@
+.link {
+  display: inline-block;
+  vertical-align: top;
+  text-decoration: none;
+  transition: all, .2s ease-out;
+  color: $main-blue;
+  font-size: 16px;
+
+  &:hover {
+    color: #000;
+  }
+
+  &:focus,
+  &:active {
+    outline: 0;
+    text-decoration: none;
+  }
+}
+
+.link_dashed {
+  border-bottom: 1px dashed $main-blue;
+    &:hover {
+      border-color: #000;
+    }
+}
+
+.link_black {
+  color: #000;
+    &:hover {
+      color: $main-blue;
+    }
+}

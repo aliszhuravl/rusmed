@@ -1,0 +1,96 @@
+.sort_filters {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 56px;
+  padding-bottom: 40px;
+  margin-bottom: 32px;
+  border-bottom: 1px solid $border-gray;
+    &__search {
+      position: relative;
+        input {
+          &::-webkit-input-placeholder {color: $main-blue; transition: color .3s;}
+          &::-moz-placeholder          {color: $main-blue; transition: color .3s;}
+        }
+    }
+}
+
+.sf_item {
+  width: calc(25% - 24px);
+  margin-right: 32px;
+    &:nth-child(4n+4) {
+      margin-right: 0;
+    }
+}
+
+.dashed_search {
+  border: 1px dashed $main-blue;
+  background-image: url('../img/loop_blue.svg');
+  background-repeat: no-repeat;
+  background-position: 93%;
+}
+
+.filter_organisations {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+    .left {
+      width: 50%;
+      display: flex;
+      align-items: center;
+      p.medium {
+        margin-right: 20px;
+      }
+    }
+    .right {
+      width: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+        p.medium {
+          margin-right: 20px;
+        }
+        .dropdown {
+          width: 200px;
+          margin-right: 0;
+        }
+    }
+}
+
+
+.pagination {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+    .pages {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 60px;
+        .page_n {
+          width: 32px;
+          height: 32px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-right: 10px;
+          cursor: pointer;
+          transition: all, .2s ease-out;
+            &:hover {
+              background-color: $main-blue;
+              color: #fff;
+            }
+            &:last-child {
+              margin-right: 0;
+            }
+        }
+        .p_active {
+          background-color: $main-blue;
+          color: #fff;
+        }
+    }
+}

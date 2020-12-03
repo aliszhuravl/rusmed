@@ -1,0 +1,109 @@
+.header {
+  @extend .border-bottom;
+  background-color: transparent;
+  margin-bottom: 0;
+  width: 100%;
+}
+
+.header__inner {
+  width: 100%;
+    .header_top {
+      width: 100%;
+      padding: 20px 0;
+        &__inner {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          @extend .layout-inner;
+          .logo_box {
+            width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            img {
+              height: 74px;
+              width: 74px;
+              margin-right: 16px;
+            }
+            p {
+              font-family: $font-family_medium;
+              font-size: 16px;
+              letter-spacing: 0.03em;
+              line-height: 22px;
+            }
+          }
+          .left_box {
+            width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            .search {
+              margin-right: 40px;
+                .item_search {
+                  width: auto;
+                }
+            }
+          }
+        }
+
+    }
+}
+
+.header_menu {
+  border-top: 1px solid #e3e8ed;
+  width: 100%;
+    &__inner {
+      width: 100%;
+      @extend .layout-inner;
+        .nav__list {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+        }
+    }
+}
+
+.dropdown_hover {
+  position: relative;
+  .dropdown__text {
+    font-size: 17px;
+    a {
+      display: block;
+    }
+    p:after {
+      top: 5px;
+      width: 8px;
+      height: 8px;
+    }
+  }
+  .dropdown__list {
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s ease-out;
+    display: block;
+  }
+  .dropdown__item {
+    font-size: 14px;
+    text-transform: none;
+    font-family: $font-family_medium;
+  }
+  &:hover {
+    .dropdown__list {
+      visibility: visible;
+      opacity: 1;
+      transition: all 0.2s ease-out;
+    }
+    .dropdown__text {
+      a {
+        color: $main-blue;
+      }
+      p::after {
+        transform: rotate(-45deg);
+        top: 9px !important;
+        border-color: #000;
+      }
+    }
+  }
+}

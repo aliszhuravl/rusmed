@@ -1,0 +1,247 @@
+@media (max-width: 1200px) {
+  .header_menu {
+    display: none;
+  }
+  .header__inner .header_top {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .page__item {
+    padding: 40px;
+  }
+  .page__inner {
+    max-width: 100%;
+    min-width: 100%;
+    padding: 0;
+  }
+  .auto_block__inner {
+    max-width: 100%;
+    min-width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+      .text_16 {
+        width: 100%;
+      }
+  }
+  .footer__inner {
+    max-width: 100%;
+    min-width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .form_container {
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+      h2 {
+        margin-bottom: 40px;
+      }
+  }
+  .main_block {
+    background-image: url(../img/fone_retina.jpg);
+    background-position: 62% bottom;
+      &__inner {
+        padding-left: 40px;
+          &__slider {
+            width: 100%;
+            padding-left: 0;
+              h1 {
+                font-size: 36px;
+                line-height: 42px;
+              }
+              .text_18 {
+                font-size: 16px;
+              }
+          }
+      }
+  }
+  .text_warning {
+    padding: 60px 20px 20px 20px;
+  }
+
+  .tile_icons {
+    .tile_item {
+      width: calc(50% - 16px);
+      margin-bottom: 32px;
+      &:nth-child(4n+4) {
+        margin-right: 32px;
+      }
+      &:nth-child(2n) {
+        margin-right: 0;
+      }
+    }
+  }
+  .medici {
+    background-image: url(../img/medici.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+  }
+
+  .info {
+    padding-bottom: 450px;
+  }
+
+  .no-padding_tablet {
+    padding-bottom: 0;
+  }
+
+  .tile_tre {
+    padding: 0;
+    margin-bottom: 0;
+      .tile_item {
+        margin-bottom: 56px;
+        width: 50%;
+        margin-right: 0;
+      }
+  }
+  .tile_news {
+    .tile_item {
+      width: calc(50% - 16px);
+      margin-right: 32px;
+      margin-bottom: 32px;
+      &:nth-child(4n+4) {
+        margin-right: 32px;
+      }
+      &:nth-child(2n) {
+        margin-right: 0;
+      }
+    }
+  }
+  .tile_nums .tile_item {
+    width: calc(50% - 16px);
+    margin-bottom: 56px;
+    &:nth-child(3n+3) {
+      margin-right: 32px;
+    }
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+  }
+  .footer {
+    padding: 0 40px;
+      .logos {
+        img {
+          width: auto;
+          height: 50px;
+        }
+      }
+  }
+  .form_container .form_box .btn {
+    min-width: 50%;
+  }
+  .form_container .form_box .form__item {
+    min-width: 50%;
+  }
+
+
+  //ADDITIONAL PAGES STARTS HERE
+
+  .sort_filters {
+    margin-top: 40px;
+    flex-wrap: wrap;
+    .sf_item {
+      width: calc(50% - 16px);
+      margin-right: 32px;
+      margin-bottom: 32px;
+      &:nth-child(3n+3) {
+        margin-right: 0;
+      }
+      &:last-child {
+        margin-right: 0;
+        margin-bottom: 0;
+        width: 100%;
+      }
+    }
+    .sort_filters__search.sf_item {
+      width: 100%;
+      margin-right: 0;
+    }
+  }
+  .dashed_search {
+    background-position: 97%;
+  }
+  .filter_organisations {
+    width: 100%;
+    flex-direction: column;
+      .left {
+        width: 100%;
+        justify-content: space-between;
+        margin-bottom: 20px;
+      }
+      .right {
+        width: 100%;
+        justify-content: flex-start;
+          .dropdown {
+            width: 100%;
+            margin-right: 0;
+          }
+      }
+  }
+  .tile_organisations {
+    .tile_item {
+      .news_img {
+        height: auto;
+      }
+      &:nth-child(3n+3) {
+        margin-right: 32px;
+      }
+      &:nth-child(2n) {
+        margin-right: 0;
+      }
+    }
+  }
+
+  //ORGANISATION PAGE
+
+  .page_title h3 {
+    max-width: 100%;
+  }
+  .org_subtitle {
+    flex-direction: column;
+    align-items: flex-start;
+    .text_18 {
+      margin-bottom: 12px;
+    }
+  }
+  .closer {
+    padding-top: 0;
+  }
+  .org_images {
+    flex-direction: column;
+    width: 100%;
+      .left {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 32px;
+      }
+      .right {
+        width: 100%;
+        height: 200px;
+      }
+  }
+  .org_profile {
+    .accordion__text {
+      font-size: 18px;
+    }
+  }
+  .gallery {
+    .gallery_item {
+      width: calc(50% - 16px);
+      &:nth-child(3n+3) {
+        margin-right: 32px;
+      }
+      &:nth-child(2n) {
+        margin-right: 0;
+      }
+    }
+  }
+
+  //OZDOROVLENIE PAGE
+
+  .page_body__inner .right .text_18 {
+    max-width: 100%;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+}

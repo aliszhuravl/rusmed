@@ -1,0 +1,125 @@
+.btn {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  height: 60px;
+  padding: 0 40px;
+  border-radius: 0;
+  border-width: 1px;
+  border-style: solid;
+  border-color: $main-blue;
+  background-color: $main-blue;
+  transition: all, .2s ease-out;
+  color: #fff;
+  font-family: $font-family_semibold;
+  font-size: 16px;
+  text-align: center;
+  white-space: nowrap;
+  text-decoration: none;
+  cursor: pointer;
+  outline: 0;
+  box-shadow: none;  
+
+  &:hover,
+  &:active,
+  &:focus {
+    outline: 0;
+    text-decoration: none;
+  }
+  
+  &:hover,
+  &:focus {
+    border-color: #498BD7;
+    background-color: #498BD7;
+  }
+  
+  &:active {
+    background-color: darken(#498BD7, 5%);
+  }
+}
+
+.btn_disabled {
+  border-color: $color-gray-40;
+  background-color: $color-gray-10;
+  color: $color-gray-60;
+  cursor: default;
+
+  &:hover,
+  &:active,
+  &:focus {
+    border-color: $color-gray-40;
+    background-color: $color-gray-10;
+    color: $color-gray-60;
+  }
+}
+
+.btn_standart {
+  border-color: $color-blue-30;
+  background-color: $color-blue-30;
+  color: $color-white;
+
+  &:hover,
+  &:focus {
+    border-color: $color-blue-50;
+    background-color: $color-blue-50;
+  }
+
+  &:active {
+    border-color: darken($color-blue-50, 5%);
+    background-color: darken($color-blue-50, 5%);
+  }
+}
+
+
+.btn_attach {
+  position: relative;
+  background-color: transparent;
+  padding: 0;
+  border: none;
+  box-shadow: none;
+  outline: 0;
+  color: $color-blue-30;
+  font-family: $font-family_bold;
+  overflow: hidden;
+  cursor: pointer;
+  
+  &:hover {
+    color: $color-blue-50;
+  }
+
+  & > input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    width: auto;
+    height: auto;
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  &.btn_disabled > input[type=file] {
+    display: none;
+  }
+}
+
+.btn_upload {
+  overflow: hidden;
+
+  & > input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    width: auto;
+    height: auto;
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  &.btn_disabled > input[type=file] {
+    display: none;
+  }
+}
