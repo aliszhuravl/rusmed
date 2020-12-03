@@ -1,4 +1,4 @@
-<h2>МЕДИЦИНСКИЙ ТУРИЗС В РОССИИ</h2>
+<h2>МЕДИЦИНСКИЙ ТУРИЗM В РОССИИ</h2>
 
 <a href="https://aliszhuravl.github.io/rusmed/web/index.html">Template</a>
 
