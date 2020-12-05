@@ -63,7 +63,7 @@ window.onload = function() {
         });
     }
 
-    smoothScroll( '#link-to-block' );
+    smoothScroll( '.link-to-block' );
 
 })(jQuery);
 $('.dropdown').each(function () {
@@ -184,3 +184,13 @@ function onYouTubePlayerAPIReady() {
     });
 
 }
+(function($) {
+
+    $('.sticky').hcSticky({
+        top: 120,
+        bottomEnd: 40,
+        className: 'is-sticky',
+        wrapperClassName: 'wrapper-sticky'
+    });
+
+})(jQuery);

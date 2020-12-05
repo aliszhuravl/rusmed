@@ -84,11 +84,12 @@
       width: 100%;
       overflow: hidden;
       margin-bottom: 10px;
-      height: 186px;
+      //height: 186px;
         img {
           width: 100%;
           transform: scale(1.0);
           transition: 1s ease-out;
+          display: block;
         }
     }
     &:hover {
@@ -108,8 +109,10 @@
     width: calc(33.3333% - 22px);
     margin-bottom: 32px;
       .news_img {
-        height: 255px;
+        //height: 255px;
         margin-bottom: 20px;
+        overflow: hidden;
+        position: relative;
       }
       .date {
         margin-bottom: 16px;
@@ -152,5 +155,60 @@
     &:nth-child(4n+4) {
       margin-right: 32px;
     }
+  }
+}
+
+.tile_2 {
+  margin-top: 24px;
+  .tile_item {
+    width: calc(50% - 16px);
+    .text_15 {
+      font-size: 16px;
+    }
+    &:nth-child(3n) {
+      .text {
+        max-width: 74%;
+      }
+    }
+    &:nth-child(3n+3) {
+      margin-right: 32px;
+    }
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+    &:last-child {
+      p:first-child {
+        margin-bottom: 12px;
+      }
+    }
+  }
+}
+
+.tile_1 {
+  margin-top: 40px;
+  .tile_item {
+    width: 100%;
+    margin-right: 0;
+      .text {
+        max-width: 1000px;
+      }
+    &:nth-child(3n+3) {
+      margin-right: 0;
+    }
+  }
+}
+
+.tile_nums_up {
+  .tile_item {
+    flex-direction: column;
+      .num {
+        margin-bottom: 20px;
+      }
+      .text {
+        max-width: 90%;
+          .text_15 {
+            font-family: $font-family;
+          }
+      }
   }
 }

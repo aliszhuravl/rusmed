@@ -64,6 +64,9 @@ h3 {
   font-size: 18px;
   line-height: 24px;
   letter-spacing: 0.02em;
+   a {
+     font-size: 18px;
+   }
 }
 
 .text_20 {
@@ -119,15 +122,46 @@ h3 {
   color: #5E5E66;
 }
 
+.strong {
+  line-height: 26px;
+  font-family: $font-family_semibold;
+}
+
 .light {
   opacity: 0.6;
   font-size: 14px;
 }
-
+.pb_40 {
+  padding-bottom: 40px;
+}
 .mb_40 {
   margin-bottom: 40px;
 }
-
+.mb_20 {
+  margin-bottom: 20px;
+}
+.mb_16 {
+  margin-bottom: 16px;
+}
+.mb_10 {
+  margin-bottom: 10px;
+}
+.mb_0 {
+  margin-bottom: 0 !important;
+}
+.centered {
+  text-align: center;
+}
 .fixed-width {
   max-width: 600px;
+}
+.text_basic {
+  font-size: 16px;
+  line-height: 24px;
+  font-family: $font-family;
+}
+.no_ul {
+  list-style-type: none;
+  padding: 0;
+  margin-left: 0;
 }

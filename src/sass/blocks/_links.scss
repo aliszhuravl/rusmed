@@ -20,7 +20,8 @@
 .link_dashed {
   border-bottom: 1px dashed $main-blue;
     &:hover {
-      border-color: #000;
+      border-color: transparent;
+      color: $main-blue;
     }
 }
 

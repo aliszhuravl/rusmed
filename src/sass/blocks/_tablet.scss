@@ -244,4 +244,153 @@
     font-size: 16px;
     margin-bottom: 20px;
   }
+
+  //NOCOMMERCE PAGE
+
+  .tile_2 {
+    .tile_item {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 32px;
+        .text {
+          max-width: 100%;
+        }
+      &:nth-child(3n) .text {
+        max-width: 100%;
+      }
+    }
+  }
+  .simple_page {
+    .page_body {
+      margin-top: 32px;
+      margin-bottom: 32px;
+    }
+    .tile_nums {
+      margin-top: 20px;
+        .tile_item {
+          &:nth-child(3n+3) {
+            margin-right: 0;
+          }
+        }
+    }
+  }
+
+  //RUSSIAN MED PAGE
+
+  .page_title_descr {
+    flex-direction: column;
+      .left {
+        margin-bottom: 32px;
+        margin-right: 0;
+          .text_18 {
+            max-width: 100%;
+          }
+      }
+      .right {
+        .text_18 {
+          max-width: 100%;
+        }
+      }
+  }
+  .tile_block {
+    margin-top: 20px !important;
+  }
+  .simple_page {
+    .tile_nums .tile_item .text .text_15.uppercase {
+      line-height: 21px;
+      FONT-SIZE: 13px;
+    }
+    .tile_nums .tile_item:nth-child(3n+3) {
+      margin-right: 32px;
+    }
+    .simmetrical {
+      flex-direction: column;
+      .left {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 32px;
+        .text_18 {
+          font-size: 14px;
+        }
+      }
+      .right {
+        width: 100%;
+          .text_18 {
+            font-size: 14px;
+            &:last-child {
+              margin-bottom: 0;
+            }
+          }
+      }
+    }
+  }
+
+  //MED ORG PAGE
+
+  .tile_1 {
+    margin-top: 40px;
+    .tile_item {
+      width: 100%;
+      margin-right: 0;
+      .text {
+        max-width: 1000px;
+      }
+      &:nth-child(3n+3) {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .simple_page .tile_nums .tile_item {
+    &:nth-child(3n+3) {
+      margin-right: 32px;
+    }
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+  }
+
+  //CONTACTS PAGE
+
+  .contacts {
+    flex-direction: column;
+      &_item {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+          .ico {
+            display: none;
+          }
+      }
+  }
+  .tablet_mb {
+    margin: 0;
+  }
+
+  //SUPPORT PAGE
+
+  .big_title__inner {
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 120px 20px;
+  }
+  .sticky_block {
+    display: none;
+  }
+  .big_block {
+    width: 100%;
+  }
+  .visa_block {
+    flex-direction: column;
+      &__inner {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 32px;
+          &:last-child {
+            margin-bottom: 0;
+          }
+      }
+  }
 }
