@@ -174,3 +174,27 @@
 ul li::before, ol li::before {
   height: 2px;
 }
+
+.lang {
+  .dropdown {
+    border: 0;
+  }
+  .dropdown__text {
+    width: 100%;
+    max-width: -webkit-fill-available;
+    height: auto;
+    padding: 0 20px 0 0;
+      &:after {
+        right: 0;
+        top: 7px;
+      }
+  }
+  .dropdown__list {
+    overflow: auto;
+    min-width: 60px;
+    height: auto;
+      .dropdown__item {
+        padding: 0 10px;
+       }
+  }
+}

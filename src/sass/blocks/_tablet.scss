@@ -1,4 +1,7 @@
 @media (max-width: 1200px) {
+  .hamburger {
+    display: block;
+  }
   .header_menu {
     display: none;
   }
@@ -391,6 +394,24 @@
           &:last-child {
             margin-bottom: 0;
           }
+      }
+  }
+
+  //EXPERTS PAGE
+
+  .experts_item {
+    flex-direction: column;
+      .left {
+        width: 100%;
+        margin-bottom: 40px;
+        margin-right: 0;
+          img {
+            height: 200px;
+            object-fit: cover;
+          }
+      }
+      .right {
+        width: 100%;
       }
   }
 }

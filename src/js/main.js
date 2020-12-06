@@ -5,3 +5,6 @@
 //= parts/_accordion.js
 //= parts/_fancybox.js
 //= parts/_sticky.js
+//= parts/_slick.js
+//= parts/_slinky.js
+//= parts/_burger.js

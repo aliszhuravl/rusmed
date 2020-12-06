@@ -14,7 +14,7 @@
            <div class="header_top">
                <div class="header_top__inner">
                    <div class="logo_box">
-                       <img src="img/logo.svg" alt="#">
+                       <a href="index.html" class="link link_logo"><img src="img/logo.svg" alt="#"></a>
                        <p>Федеральный проект<br>
                            «Развитие экспорта Медицинских Услуг»</p>
                    </div>
@@ -23,7 +23,31 @@
                            <input type="search" class="form__item item_search">
                        </div>
                        <div class="lang">
-                           RU
+                           <div class="dropdown dropdown_filters">
+                               <div class="dropdown__text">RU</div>
+                               <ul class="dropdown__list">
+                                   <li class="dropdown__item">
+                                       <p>RU</p>
+                                   </li>
+                                   <li class="dropdown__item">
+                                       <p>ENG</p>
+                                   </li>
+                                   <li class="dropdown__item">
+                                       <p>ZH</p>
+                                   </li>
+                                   <li class="dropdown__item">
+                                       <p>AR</p>
+                                   </li>
+                                   <li class="dropdown__item">
+                                       <p>KZ</p>
+                                   </li>
+                               </ul>
+                           </div>
+                       </div>
+                       <div class="burger">
+                           <button class="hamburger" id="burger">
+                               <span></span>
+                           </button>
                        </div>
                    </div>
                </div>
@@ -31,18 +55,18 @@
             <div class="header_menu">
                 <div class="header_menu__inner">
                     <div class="nav__list">
-                        <a href="#" class="nav__link">Организации</a>
+                        <a href="catalog.html" class="nav__link">Организации</a>
                         <div class="nav__link dropdown_hover">
                                 <div class="dropdown__text"><p>Медицинский туризм</p></div>
                                     <ul class="dropdown__list">
                                         <li class="dropdown__item">
-                                            <a href="#" class="link">Медицина в РФ</a>
+                                            <a href="rusmed.html" class="link">Медицина в РФ</a>
                                         </li>
                                         <li class="dropdown__item">
-                                            <a href="#" class="link">Оздоровление в РФ</a>
+                                            <a href="ozdor.html" class="link">Оздоровление в РФ</a>
                                         </li>
                                         <li class="dropdown__item">
-                                            <a href="#" class="link">Поддержка</a>
+                                            <a href="support.html" class="link">Поддержка</a>
                                         </li>
                                     </ul>
                         </div>
@@ -50,19 +74,19 @@
                             <div class="dropdown__text"><p>О проекте</p></div>
                             <ul class="dropdown__list">
                                 <li class="dropdown__item">
-                                    <a href="#" class="link">Общая информация</a>
+                                    <a href="info.html" class="link">Общая информация</a>
                                 </li>
                                 <li class="dropdown__item">
-                                    <a href="#" class="link">Мнение экспертов</a>
+                                    <a href="experts.html" class="link">Мнение экспертов</a>
                                 </li>
                                 <li class="dropdown__item">
-                                    <a href="#" class="link">Медицинский опыт иностранных пациентов</a>
+                                    <a href="tourists.html" class="link">Медицинский опыт иностранных пациентов</a>
                                 </li>
                                 <li class="dropdown__item">
-                                    <a href="#" class="link">Вспомогательная информация</a>
+                                    <a href="help.html" class="link">Вспомогательная информация</a>
                                 </li>
                                 <li class="dropdown__item">
-                                    <a href="#" class="link">Полезная информация</a>
+                                    <a href="info.html" class="link">Полезная информация</a>
                                 </li>
                             </ul>
                         </div>
@@ -70,14 +94,14 @@
                             <div class="dropdown__text"><p>Сотрудничество</p></div>
                             <ul class="dropdown__list">
                                 <li class="dropdown__item">
-                                    <a href="#" class="link">Для медицинских организаций</a>
+                                    <a href="formeds.html" class="link">Для медицинских организаций</a>
                                 </li>
                                 <li class="dropdown__item">
-                                    <a href="#" class="link">Для некоммерческих организаций</a>
+                                    <a href="nocommerce.html" class="link">Для некоммерческих организаций</a>
                                 </li>
                             </ul>
                         </div>
-                        <a href="#" class="nav__link">Контакты</a>
+                        <a href="contacts.html" class="nav__link">Контакты</a>
                     </div>
                 </div>
             </div>
@@ -227,10 +251,62 @@
             </div>
         </div>
     </footer>
+    <div class="menu_wrapper menu_opener">
+        <div class="menu_mobile">
+            <div class="menu_mobile__inner">
+
+                <div class="menu_body">
+                    <div class="js-menu">
+                        <ul>
+                            <li>
+                                <a href="catalog.html">Организации</a>
+                            </li>
+                            <li>
+                                <a href="#">Медицинский туризм</a>
+                                <ul>
+                                    <li class="inner">
+                                        <a href="rusmed.html" class="link">Медицина в РФ</a>
+                                        <a href="ozdor.html" class="link">Оздоровление в РФ</a>
+                                        <a href="support.html" class="link">Поддержка</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">О проекте</a>
+                                <ul>
+                                    <li class="inner">
+                                        <a href="info.html" class="link">Общая информация</a>
+                                        <a href="experts.html" class="link">Мнение экспертов</a>
+                                        <a href="tourists.html" class="link">Медицинский опыт иностранных пациентов</a>
+                                        <a href="help.html" class="link">Вспомогательная информация</a>
+                                        <a href="info.html" class="link">Полезная информация</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Сотрудничество</a>
+                                <ul>
+                                    <li class="inner">
+                                        <a href="formeds.html" class="link">Для медицинских организаций</a>
+                                        <a href="nocommerce.html" class="link">Для некоммерческих организаций</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="contacts.html">Контакты</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/libs/jquery/jquery-3.1.1.min.js"><\/script>')</script>
 <script src="js/libs/jquery.fancybox/jquery.fancybox.min.js"></script>
+<script src="js/libs/jquery.slick/slick.min.js"></script>
+<script src="js/libs/slinky.min.js"></script>
 <script src="js/libs/jquery.hc-sticky.min.js"></script>
 <script src="js/main.js"></script>
 </body>

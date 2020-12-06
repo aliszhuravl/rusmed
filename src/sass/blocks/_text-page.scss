@@ -85,3 +85,39 @@
       }
     }
 }
+
+.link_text {
+  display: inline;
+}
+
+.plan_list {
+  list-style-type: none;
+  padding: 0;
+  margin-left: 0;
+  column-count: 3;
+    li {
+      margin-bottom: 12px;
+      font-family: $font-family_medium;
+    }
+}
+
+.experts {
+  width: 100%;
+    &_item {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      margin-bottom: 56px;
+        .left {
+          width: 35%;
+          margin-right: 56px;
+          img {
+            width: 100%;
+            display: block;
+          }
+        }
+        .right {
+          width: 65%;
+        }
+    }
+}

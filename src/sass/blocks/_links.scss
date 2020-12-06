@@ -31,3 +31,36 @@
       color: $main-blue;
     }
 }
+
+.link_logo {
+  opacity: 1;
+    &:hover {
+      opacity: 0.8;
+    }
+}
+
+.link_arrow {
+  padding-right: 16px;
+  position: relative;
+  color: #000;
+  font-family: $font-family_semibold;
+    &:after {
+      right: 0;
+      top: 8px;
+      position: absolute;
+      width: 7px;
+      height: 7px;
+      border-top: 2px solid #000;
+      border-right: 2px solid #000;
+      transform: rotate(45deg);
+      content: '';
+      transition: all 0.2s ease-out;
+    }
+    &:hover {
+      color: $main-blue;
+      &:after {
+        right: -6px;
+        border-color: $main-blue;
+      }
+    }
+}
