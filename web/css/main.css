@@ -738,7 +738,8 @@ h3 {
 }
 
 .dropdown_hover .dropdown__text {
-	font-size: 17px;
+	font-size: 15px;
+	color: #333;
 }
 
 .dropdown_hover .dropdown__text a {
@@ -804,7 +805,7 @@ h3 {
 
 .nav__link {
 	font-family: 'Montserrat-SemiBold', 'Arial', serif;
-	font-size: 17px;
+	font-size: 15px;
 	line-height: 22px;
 	position: relative;
 	padding: 40px 0;
@@ -2187,7 +2188,6 @@ ol li::before {
 }
 
 .breadcrumbs .breadcrumbs_list {
-	font-size: 14px;
 	display: flex;
 	margin: 0;
 	padding: 0;
@@ -2210,16 +2210,17 @@ ol li::before {
 }
 
 .breadcrumbs .breadcrumbs_list li p {
+	font-size: 16px;
 	opacity: .4;
 	color: #000;
 }
 
 .breadcrumbs .breadcrumbs_list li span {
-	margin: 0 4px;
+	margin: 0 5px;
 }
 
 .breadcrumbs .breadcrumbs_list .disabled {
-	max-width: 250px;
+	margin-left: 2px;
 	white-space: nowrap;
 	text-overflow: ellipsis;
 }
