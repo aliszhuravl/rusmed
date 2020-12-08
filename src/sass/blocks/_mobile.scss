@@ -434,4 +434,20 @@
     font-size: 24px;
     line-height: 32px;
   }
+
+  .popup {
+    top: 10%;
+    width: 100%;
+    max-width: 320px;
+      button {
+        width: 100%;
+      }
+    .popup_inner {
+      padding: 20px;
+    }
+  }
+  .close-modal {
+    top: -60px;
+    right: 0;
+  }
 }
