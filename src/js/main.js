@@ -8,3 +8,4 @@
 //= parts/_slick.js
 //= parts/_slinky.js
 //= parts/_burger.js
+//= parts/_map.js

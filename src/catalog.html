@@ -71,7 +71,7 @@
                     <div class="filter_organisations">
                         <div class="left">
                             <p class="medium">Найдены 32 организации</p>
-                            <a href="#" class="link">Показать на карте</a>
+                            <a href="#" class="link" id="show_map">Показать на карте</a>
                         </div>
                         <div class="right">
                             <p class="medium">Сортировать:</p>
@@ -96,104 +96,111 @@
                     </div>
                 </div>
             </section>
-            <section class="page__item ">
-                <div class="tile tile_news tile_organisations">
-                    <a class="tile_item" href="organisation.html">
-                        <div class="news_img">
-                            <img src="img/org/01.jpg" alt="#">
-                        </div>
-                        <div class="text_container">
-                            <p class="date">г. Москва</p>
-                            <p class="text_16">ФГБУ «Государственный научный центр дерматовенерологии
-                                и косметологии»
-                            </p>
-                        </div>
-                    </a>
-                    <a class="tile_item" href="organisation.html">
-                        <div class="news_img">
-                            <img src="img/org/02.jpg" alt="#">
-                        </div>
-                        <div class="text_container">
-                            <p class="date">Воронежская область, г. Воронеж</p>
-                            <p class="text_16">ООО «Клиника «Город Здоровья»</p>
-                        </div>
-                    </a>
-                    <a class="tile_item" href="organisation.html">
-                        <div class="news_img">
-                            <img src="img/org/03.jpg" alt="#">
-                        </div>
-                        <div class="text_container">
-                            <p class="date">Астраханская область, г. Астрахань</p>
-                            <p class="text_16">ФГБУ «Федеральный центр сердечно-сосудистой хирургии» Министерства здравоохранения Российской Федерации
-                            </p>
-                        </div>
-                    </a>
-                    <a class="tile_item" href="organisation.html">
-                        <div class="news_img">
-                            <img src="img/org/04.jpg" alt="#">
-                        </div>
-                        <div class="text_container">
-                            <p class="date">Волгоградская область, г. Волгоград</p>
-                            <p class="text_16">ГБУЗ «ВОКБ №1»
-                            </p>
-                        </div>
-                    </a>
-                    <a class="tile_item" href="organisation.html">
-                        <div class="news_img">
-                            <img src="img/org/05.jpg" alt="#">
-                        </div>
-                        <div class="text_container">
-                            <p class="date">Краснодарский край, г. Краснодар</p>
-                            <p class="text_16">ГБУЗ «Краеевая клиническая больница №2»</p>
-                        </div>
-                    </a>
-                    <a class="tile_item" href="organisation.html">
-                        <div class="news_img">
-                            <img src="img/org/06.jpg" alt="#">
-                        </div>
-                        <div class="text_container">
-                            <p class="date">г. Санкт-Петербург</p>
-                            <p class="text_16">ГБУЗ Ленинградская областная клиническая больница</p>
-                        </div>
-                    </a>
-                    <a class="tile_item" href="organisation.html">
-                        <div class="news_img">
-                            <img src="img/org/07.jpg" alt="#">
-                        </div>
-                        <div class="text_container">
-                            <p class="date">г. Москва</p>
-                            <p class="text_16">ФГБУ «НМИЦ радиологии» Минздрава России</p>
-                        </div>
-                    </a>
-                    <a class="tile_item" href="organisation.html">
-                        <div class="news_img">
-                            <img src="img/org/08.jpg" alt="#">
-                        </div>
-                        <div class="text_container">
-                            <p class="date">г. Москва</p>
-                            <p class="text_16">ФГБУ «Национальный медицинский исследовательский центр терапии
-                                и профилактической медицины» Минздрава России</p>
-                        </div>
-                    </a>
-                    <a class="tile_item" href="organisation.html">
-                        <div class="news_img">
-                            <img src="img/org/09.jpg" alt="#">
-                        </div>
-                        <div class="text_container">
-                            <p class="date">Республика Башкортостан, г. Уфа</p>
-                            <p class="text_16">Государственное бюджетное учреждение «Уфимский научно-исследовательский институт глазных болезней Академии наук Республики Башкортостан»</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="pagination">
-                    <p><a href="#" class="link link_black">Назад</a></p>
-                    <div class="pages">
-                        <p class="page_n p_active">1</p>
-                        <p class="page_n">2</p>
-                        <p class="page_n">3</p>
-                        <p class="page_n">4</p>
+            <section class="page__item">
+                <div class="catalog_container item_open">
+                    <div class="tile tile_news tile_organisations">
+                        <a class="tile_item" href="organisation.html">
+                            <div class="news_img">
+                                <img src="img/org/01.jpg" alt="#">
+                            </div>
+                            <div class="text_container">
+                                <p class="date">г. Москва</p>
+                                <p class="text_16">ФГБУ «Государственный научный центр дерматовенерологии
+                                    и косметологии»
+                                </p>
+                            </div>
+                        </a>
+                        <a class="tile_item" href="organisation.html">
+                            <div class="news_img">
+                                <img src="img/org/02.jpg" alt="#">
+                            </div>
+                            <div class="text_container">
+                                <p class="date">Воронежская область, г. Воронеж</p>
+                                <p class="text_16">ООО «Клиника «Город Здоровья»</p>
+                            </div>
+                        </a>
+                        <a class="tile_item" href="organisation.html">
+                            <div class="news_img">
+                                <img src="img/org/03.jpg" alt="#">
+                            </div>
+                            <div class="text_container">
+                                <p class="date">Астраханская область, г. Астрахань</p>
+                                <p class="text_16">ФГБУ «Федеральный центр сердечно-сосудистой хирургии» Министерства здравоохранения Российской Федерации
+                                </p>
+                            </div>
+                        </a>
+                        <a class="tile_item" href="organisation.html">
+                            <div class="news_img">
+                                <img src="img/org/04.jpg" alt="#">
+                            </div>
+                            <div class="text_container">
+                                <p class="date">Волгоградская область, г. Волгоград</p>
+                                <p class="text_16">ГБУЗ «ВОКБ №1»
+                                </p>
+                            </div>
+                        </a>
+                        <a class="tile_item" href="organisation.html">
+                            <div class="news_img">
+                                <img src="img/org/05.jpg" alt="#">
+                            </div>
+                            <div class="text_container">
+                                <p class="date">Краснодарский край, г. Краснодар</p>
+                                <p class="text_16">ГБУЗ «Краеевая клиническая больница №2»</p>
+                            </div>
+                        </a>
+                        <a class="tile_item" href="organisation.html">
+                            <div class="news_img">
+                                <img src="img/org/06.jpg" alt="#">
+                            </div>
+                            <div class="text_container">
+                                <p class="date">г. Санкт-Петербург</p>
+                                <p class="text_16">ГБУЗ Ленинградская областная клиническая больница</p>
+                            </div>
+                        </a>
+                        <a class="tile_item" href="organisation.html">
+                            <div class="news_img">
+                                <img src="img/org/07.jpg" alt="#">
+                            </div>
+                            <div class="text_container">
+                                <p class="date">г. Москва</p>
+                                <p class="text_16">ФГБУ «НМИЦ радиологии» Минздрава России</p>
+                            </div>
+                        </a>
+                        <a class="tile_item" href="organisation.html">
+                            <div class="news_img">
+                                <img src="img/org/08.jpg" alt="#">
+                            </div>
+                            <div class="text_container">
+                                <p class="date">г. Москва</p>
+                                <p class="text_16">ФГБУ «Национальный медицинский исследовательский центр терапии
+                                    и профилактической медицины» Минздрава России</p>
+                            </div>
+                        </a>
+                        <a class="tile_item" href="organisation.html">
+                            <div class="news_img">
+                                <img src="img/org/09.jpg" alt="#">
+                            </div>
+                            <div class="text_container">
+                                <p class="date">Республика Башкортостан, г. Уфа</p>
+                                <p class="text_16">Государственное бюджетное учреждение «Уфимский научно-исследовательский институт глазных болезней Академии наук Республики Башкортостан»</p>
+                            </div>
+                        </a>
                     </div>
-                    <p><a href="#" class="link link_black">Вперёд</a></p>
+                    <div class="pagination">
+                        <p><a href="#" class="link link_black">Назад</a></p>
+                        <div class="pages">
+                            <p class="page_n p_active">1</p>
+                            <p class="page_n">2</p>
+                            <p class="page_n">3</p>
+                            <p class="page_n">4</p>
+                        </div>
+                        <p><a href="#" class="link link_black">Вперёд</a></p>
+                    </div>
+                </div>
+                <div class="map_catalog">
+                    <div class="map_catalog_box">
+                        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A7e8f738eb2e83a292999f261ea8b921d437b089cd659fa39813e4b7d0bd806de&amp;source=constructor" width="100%" height="600px" frameborder="0"></iframe>
+                    </div>
                 </div>
             </section>
         </div>

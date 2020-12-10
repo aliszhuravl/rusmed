@@ -200,3 +200,22 @@
     margin-bottom: 12px;
   }
 }
+
+.map_catalog {
+  width: 100%;
+  display: none;
+  &_box {
+    width: 100%;
+    background-color: #ccc;
+    max-height: 600px;
+  }
+}
+
+.catalog_container {
+  display: none;
+}
+
+.item_open {
+  display: block;
+}
+
