@@ -324,8 +324,56 @@
         </div>
     </div>
 </div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/libs/jquery/jquery-3.1.1.min.js"><\/script>')</script>
+<script src="https://api-maps.yandex.ru/1.1/index.xml" type="text/javascript"></script><script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<script type="text/javascript">
+    // Создает обработчик события window.onLoad
+    YMaps.jQuery(function () {
+
+        // Создает экземпляр карты и привязывает его к созданному контейнеру
+        var map = new YMaps.Map(YMaps.jQuery("#YMapsID")[0]);
+
+
+        // Устанавливает начальные параметры отображения карты: центр карты и коэффициент масштабирования
+        map.setCenter(new YMaps.GeoPoint(37.64, 55.76), 6);
+
+
+        var template = new YMaps.Template(
+                "<div style=\"width:280px;padding:10px;\"><b style=\"margin-bottom:20px;line-height: 24px;font-size:18px;\" >$[name]</b></div>\
+                <div style=\"width:280px;padding:10px;\"><a href=\"$[metaDataProperty.moreLink]\" style=\"color:#529BEF;line-height: 24px;\">Сайт организации</a></div>\
+                <div style=\"width:280px;padding:10px;\"><img style=\"height:auto;width:100%;\" src=\"../img/gb.jpeg\"\/></div>");
+
+        var s = new YMaps.Style();
+        s.balloonContentStyle = new YMaps.BalloonContentStyle(template);
+        s.iconStyle = new YMaps.IconStyle();
+        s.iconStyle.href = "../img/pin.png";
+        s.iconStyle.size = new YMaps.Point(28, 42);
+
+
+        // Создает метку в центре Москвы
+        var placemark1 = new YMaps.Placemark(new YMaps.GeoPoint(37.609218,55.753559),  {style: s} );
+
+        // Устанавливает содержимое балуна
+        placemark1.name = "ГБУЗ «Краеевая клиническая больница №2»";
+        placemark1.description = "С помощью меток можно обозначать на карте различные объекты.";
+
+
+
+
+        // Создает метку в центре Москвы
+        var placemark2 = new YMaps.Placemark(new YMaps.GeoPoint(37.573856,55.661574), {style: s});
+
+        placemark2.name = "Ещё метка";
+        placemark2.description = "Столица Российской Федерации";
+
+        //Добавляет метку на карту
+        map.addOverlay(placemark1);
+        map.addOverlay(placemark2);
+
+        // Открывает балун
+        placemark1.openBalloon();
+    });
+</script>
 <script src="js/libs/jquery.fancybox/jquery.fancybox.min.js"></script>
 <script src="js/libs/jquery.slick/slick.min.js"></script>
 <script src="js/libs/slinky.min.js"></script>

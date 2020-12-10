@@ -9,3 +9,4 @@
 //= parts/_slinky.js
 //= parts/_burger.js
 //= parts/_map.js
+//= parts/_ymap.js
