@@ -1904,12 +1904,12 @@ h3 {
 	font-family: 'Montserrat-Medium', 'Arial', serif;
 }
 
-.tile_organisations .tile_item:nth-child(3n+3) {
-	margin-right: 0;
-}
-
 .tile_organisations .tile_item:nth-child(4n+4) {
 	margin-right: 32px;
+}
+
+.tile_organisations .tile_item:nth-child(3n+3) {
+	margin-right: 0;
 }
 
 .tile_nums {
